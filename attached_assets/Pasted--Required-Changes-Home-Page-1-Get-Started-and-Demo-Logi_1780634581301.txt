@@ -1,0 +1,56 @@
+# Required Changes
+
+## Home Page
+
+1. `Get Started` and `Demo Login` currently open the same page.
+2. Keep `Demo Login` behavior unchanged.
+3. Change `Get Started` to navigate to the appropriate onboarding/signup page.
+4. Add proper navigation links to all Feature cards (currently non-clickable).
+5. WhatsApp Bot should open in the **Farmer Dashboard**, not the **Admin Dashboard**.
+
+## Authentication & Authorization
+
+1. Implement role-based access control (RBAC).
+2. If logged in as **Farmer**, only Farmer Dashboard routes/pages should be accessible.
+3. Prevent Farmer users from accessing Admin Dashboard, Admin APIs, or Admin routes.
+4. Redirect unauthorized users to login/access denied page.
+
+## Farmer Dashboard
+
+1. Make the following cards clickable and route to their respective pages:
+
+   * Total Harvest
+   * Bookings
+   * Saved From Spoilage
+   * Transport Pool
+
+2. Cold Storage and Transport data are currently static.
+
+3. Dashboard metrics should update dynamically based on farmer actions and database records.
+
+4. Any updates made from Farmer Dashboard must immediately reflect in:
+
+   * Cold Storage Dashboard
+   * Transport Dashboard
+   * Dashboard statistics/cards
+
+## Admin Dashboard
+
+1. Remove the entire **n8n Workflow Blueprint** section.
+2. Remove any unused/demo-only workflow visualizations.
+
+## Dynamic Data Requirements
+
+1. Replace hardcoded/static values across the application with database-driven data.
+2. Implement real-time or near real-time updates where applicable.
+3. Dashboard statistics should be calculated dynamically.
+4. Tables, charts, bookings, harvest records, transport pools, and storage records should fetch from backend APIs.
+5. Ensure proper state management and API synchronization.
+
+## General Improvements
+
+1. Audit all buttons, cards, and menu items for missing navigation links.
+2. Remove placeholder/demo content.
+3. Ensure all dashboard data persists in the database.
+4. Maintain consistency between frontend state and backend data.
+5. Improve overall dynamic behavior and reduce hardcoded content throughout the website.
