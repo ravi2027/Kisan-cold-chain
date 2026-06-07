@@ -282,7 +282,7 @@ $env:PORT="24832"; $env:BASE_PATH="/"
 pnpm --filter @workspace/kisan-cold-chain run dev
 ```
 
-Open [http://localhost:24832](http://localhost:24832)
+Open- https://ai-cold-chain--kumarravidhaka0.replit.app/
 
 **API server:**
 
