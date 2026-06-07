@@ -67,7 +67,7 @@ AI-powered post-harvest cold chain management platform for Indian farmers. Conne
 |---------|----------------------|
 | AI spoilage prediction | Gemini AI (via API routes) |
 | WhatsApp booking | WhatsApp webhook routes |
-| Automation | n8n workflow blueprints |
+| Automation | **n8n** workflow blueprints |
 | Weather risk | Weather API routes + DB schema |
 | Auth | Client-side role-based auth context (farmer, operator, transport, admin) |
 
@@ -75,7 +75,7 @@ AI-powered post-harvest cold chain management platform for Indian farmers. Conne
 
 | Layer | Technology |
 |-------|------------|
-| Platform | Replit (PNPM workspace stack) |
+| Platform | **Replit** (PNPM workspace stack) |
 | Web port | `24832` |
 | API port | `8080` |
 | Mockup sandbox port | `8081` |
@@ -282,7 +282,7 @@ $env:PORT="24832"; $env:BASE_PATH="/"
 pnpm --filter @workspace/kisan-cold-chain run dev
 ```
 
-Open - https://ai-cold-chain--kumarravidhaka0.replit.app/
+Open [http://localhost:24832](http://localhost:24832)
 
 **API server:**
 
